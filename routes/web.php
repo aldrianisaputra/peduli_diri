@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SelfCareController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layout.main');
+    return view('dashboard');
 });
 
 
+Route::get('tampilandata', [SelfCareController::class,'tampilan'])->name('tampilandata');
+Route::get('tambahdata', [SelfCareController::class,'tambahdata'])->name('tambahdata');
