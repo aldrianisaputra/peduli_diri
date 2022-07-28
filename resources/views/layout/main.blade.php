@@ -9,10 +9,10 @@
     <meta name="author" content="DexignZone">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Dompet : Payment Admin Template">
-    <meta property="og:title" content="Dompet : Payment Admin Template">
-    <meta property="og:description" content="Dompet : Payment Admin Template">
-    <meta property="og:image" content="https://dompet.dexignlab.com/xhtml/social-image.png">
+    <meta name="description" content="SELFCARE">
+    <meta property="og:title" content="SELFCARE">
+    <meta property="og:description" content="SELFCARE">
+    <meta property="og:image" content="">
     <meta name="format-detection" content="telephone=no">
 
     <!-- PAGE TITLE HERE -->
@@ -63,12 +63,12 @@
             <a href="index.html" class="brand-logo">
                 <img src="images/logo-selfcare.png" width="80" alt="">
                 <div class="header-logo">
-                    <span class="font-w600 "><b>SELFCARE</b></span>
-                    <small class=" font-w300" style="font-size: 14px">catatan perjalanan</small>
+                    <span class="font-w600 text-black"><b>SELFCARE</b></span>
+                    <small class=" font-w300 text-black" style="font-size: 14px">catatan perjalanan</small>
                 </div>
             </a>
-                
-               
+
+
         </div>
         <!--**********************************
             Nav header end
@@ -79,7 +79,27 @@
         <!--**********************************
             Header start
         ***********************************-->
-        
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+							<div class="dashboard_bar">
+                                Dashboard
+                            </div>
+                        </div>
+                        <ul class="navbar-nav header-right">
+							<li class="nav-item">
+								<div class="input-group search-area">
+									<input type="text" class="form-control" placeholder="Search here...">
+									<span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
+								</div>
+							</li>
+                        </ul>
+                    </div>
+				</nav>
+			</div>
+		</div>
         <!--**********************************
             Header end ti-comment-alt
         ***********************************-->
@@ -121,20 +141,20 @@
                         </div>
                     </li>
                     <li><a href="index.html" class="ai-icon" aria-expanded="false">
-                        <i class="flaticon-025-dashboard"></i>
+                            <i class="flaticon-025-dashboard"></i>
                             <span class="nav-text">Home</span>
                         </a>
                     </li>
                     <li><a href="widget-basic.html" class="ai-icon" aria-expanded="false">
-                        <i class="flaticon-025-dashboard"></i>
+                            <i class="flaticon-043-menu"></i>
                             <span class="nav-text">Catatan Perjalanan</span>
                         </a>
                     </li>
                     <li><a href="widget-basic.html" class="ai-icon" aria-expanded="false">
-                        <i class="flaticon-025-dashboard"></i>
-                            <span class="nav-text">Isi <Datag></Datag></span>
+                            <i class="flaticon-022-copy"></i>
+                            <span class="nav-text">Isi data</span>
                         </a>
-                    </li>   
+                    </li>
                 </ul>
             </div>
         </div>
@@ -148,9 +168,6 @@
         <div class="content-body">
             <!-- row -->
             <div class="container-fluid">
-                <div class="row invoice-card-row">
-
-                </div>
                 <div class="row">
                     <div class="col-xl-9 col-xxl-12">
                         <div class="card">
@@ -171,14 +188,17 @@
                                                         </svg>
                                                     </span>
                                                     <div>
-                                                        <h3 class="text-white font-w600" style="font-size: 30px">SELFCARE
+                                                        <h3 class="text-white font-w600" style="font-size: 30px">
+                                                            SELFCARE
                                                         </h3>
-                                                        <p style="font-size: 16px">Selamat datang "nama user" di aplikasi SELFCARE</p>   
+                                                        <p style="font-size: 16px">Selamat datang "nama user" di
+                                                            aplikasi SELFCARE</p>
                                                     </div>
-                                                </div>                                           
+                                                </div>
                                             </div>
 
-                                            <a href="" class="btn bg-gradient-2 text-white" style="">Isi Catatan Perjalanan</a>
+                                            <a href="" class="btn bg-gradient-2 text-white" style="">Isi Catatan
+                                                Perjalanan</a>
                                         </div>
                                     </div>
                                 </div>
@@ -187,9 +207,11 @@
                     </div>
 
 
-                   
+
                 </div>
             </div>
+           
+            
         </div>
         <!--**********************************
             Content body end
