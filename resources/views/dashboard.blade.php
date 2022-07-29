@@ -1,8 +1,30 @@
 @extends('layout.main')
 
 @section('content')
-
-    <div class="card-body">
+<div class="container">
+    <div class="header">
+        <div class="header-content">
+            <nav class="navbar navbar-expand">
+                <div class="collapse navbar-collapse justify-content-between">
+                    <div class="header-left">
+                        <div class="dashboard_bar">
+                            Dashboard
+                        </div>
+                    </div>
+                    <ul class="navbar-nav header-right">
+                        <li class="nav-item">
+                            <div class="input-group search-area">
+                                <input type="text" class="form-control" placeholder="Search here...">
+                                <span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="card-body">
         <div class="col-xl">
             <div class=" col-xxl-12">
                 <div class="col-xl-12">
@@ -22,13 +44,16 @@
                                 <h3 class="text-white font-w600" style="font-size: 30px">
                                     SELFCARE
                                 </h3>
-                                <p style="font-size: 16px">Selamat datang "nama user" di
-                                    aplikasi SELFCARE</p>
+                                <h3 class="text-white" style="font-size: 11px; margin-top: -10px">
+                                    Aplikasi catatan perjalanan
+                                </h3>
+                                <p style="font-size: 16px">  Selamat datang Mark di
+                                    aplikasi SELFCARE!</p>
                             </div>
                         </div>
                     </div>
 
-                    <a href="" class="btn bg-gradient-2 text-white" style="">Isi Catatan
+                    <a href="/tambahdata" class="btn bg-gradient-2 text-white" style="">Isi Catatan
                         Perjalanan</a>
                 </div>
             </div>

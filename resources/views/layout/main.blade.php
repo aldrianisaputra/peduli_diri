@@ -60,11 +60,10 @@
             Nav header start
         ***********************************-->
         <div class="nav-header">
-            <a href="index.html" class="brand-logo">
-                <img src="images/logo-selfcare.png" width="80" alt="">
+            <a href="/dashboard" class="brand-logo">
+                <img src="images/logo-selfcare.png" width="90" alt="">
                 <div class="header-logo">
-                    <span class="font-w600 text-black"><b>SELFCARE</b></span>
-                    <small class=" font-w300 text-black" style="font-size: 14px">catatan perjalanan</small>
+                    <span class="font-w600 text-black" style="font-size: 20px;"><b>SELFCARE</b></span>
                 </div>
             </a>
 
@@ -79,27 +78,7 @@
         <!--**********************************
             Header start
         ***********************************-->
-        <div class="header">
-            <div class="header-content">
-                <nav class="navbar navbar-expand">
-                    <div class="collapse navbar-collapse justify-content-between">
-                        <div class="header-left">
-							<div class="dashboard_bar">
-                                Dashboard
-                            </div>
-                        </div>
-                        <ul class="navbar-nav header-right">
-							<li class="nav-item">
-								<div class="input-group search-area">
-									<input type="text" class="form-control" placeholder="Search here...">
-									<span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
-								</div>
-							</li>
-                        </ul>
-                    </div>
-				</nav>
-			</div>
-		</div>
+       
         <!--**********************************
             Header end ti-comment-alt
         ***********************************-->
@@ -112,10 +91,10 @@
                 <ul class="metismenu" id="menu">
                     <li class="dropdown header-profile">
                         <a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
-                            <img src="images/profile/pic1.jpg" width="20" alt="">
+                            <img src="images/avatar/1.png" width="15" alt="">
                             <div class="header-info ms-3">
-                                <span class="font-w600 ">Hi, <b>Nama User</b></span>
-                                <small class="text-center  font-w400">000005902930</small>
+                                <span class="font-w600 ">Hi, <b>Mark</b></span>
+                                <small class="text-center  font-w400">0005902930</small>
                             </div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end">
@@ -140,7 +119,7 @@
                             </a>
                         </div>
                     </li>
-                    <li><a href="/" class="ai-icon" aria-expanded="false">
+                    <li><a href="/dashboard" class="ai-icon" aria-expanded="false">
                             <i class="flaticon-025-dashboard"></i>
                             <span class="nav-text">Home</span>
                         </a>
@@ -152,7 +131,7 @@
                     </li>
                     <li><a href="/tambahdata" class="ai-icon" aria-expanded="false">
                             <i class="flaticon-022-copy"></i>
-                            <span class="nav-text">Isi data</span>
+                            <span class="nav-text">Isi Data</span>
                         </a>
                     </li>
                 </ul>
