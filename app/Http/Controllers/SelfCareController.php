@@ -17,5 +17,11 @@ class SelfCareController extends Controller
     public function tambahdata(){
         return view('tambahdata');
     }
+
+    public function insertdata(Request $request){
+        // dd($request->all());
+        SelfCare::create($request->all());
+        return redirect()->route('tampilandata');
+    }
    
 }

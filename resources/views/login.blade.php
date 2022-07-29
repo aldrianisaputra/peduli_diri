@@ -39,14 +39,14 @@
                                         </div>
 									</div>
                                     <h4 class="text-center mb-4">Sign in your account</h4>
-                                    <form action="index.html">
+                                    <form action="login">
                                         <div class="mb-3">
                                             <label class="mb-1"><strong>NIK</strong></label>
-                                            <input type="text" class="form-control" value="Masukan NIK anda">
+                                            <input type="text" class="form-control" placeholder="Masukan NIK anda">
                                         </div>
                                         <div class="mb-3">
                                             <label class="mb-1"><strong>Username</strong></label>
-                                            <input type="text" class="form-control" value="Masukan Nama Username Anda">
+                                            <input type="text" class="form-control" placeholder="Masukan Nama Username Anda">
                                         </div>
                                        
                                         <div class="text-center">

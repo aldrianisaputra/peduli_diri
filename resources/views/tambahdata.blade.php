@@ -33,7 +33,8 @@
             <div class="card-body">
                 <div class="card-body">
                     <div class="form-validation">
-                        <form class="needs-validation" novalidate="">
+                        <form class="needs-validation" action="/insertdata" method="POST" enctype="multipart/form-data">
+                            @csrf
                             <div class="row">
                                 <div class="col-xl-12">
                                     <div class="mb-3 row">
@@ -41,7 +42,7 @@
                                             <span class="text-danger">*</span>
                                         </label>
                                         <div class="col-lg-6">
-                                            <input type="text" class="form-control" id="validationCustom01" placeholder="Masukan tanggal.." required="">
+                                            <input type="date" class="form-control" id="validationCustom01" placeholder="Masukan tanggal.." required="" name="tanggal">
                                             <div class="invalid-feedback">
                                                 Tolong isi tanggal.
                                             </div>
@@ -56,7 +57,7 @@
                                             <span class="text-danger">*</span>
                                         </label>
                                         <div class="col-lg-6">
-                                            <input type="text" class="form-control" id="validationCustom01" placeholder="Masukan waktu.." required="">
+                                            <input type="text" class="form-control" id="validationCustom01" placeholder="Masukan waktu.." required="" name="waktu">
                                             <div class="invalid-feedback">
                                                 Tolong isi dahulu.
                                             </div>
@@ -71,7 +72,7 @@
                                             <span class="text-danger">*</span>
                                         </label>
                                         <div class="col-lg-6">
-                                            <input type="text" class="form-control" id="validationCustom01" placeholder="Masukan Lokasi.." required="">
+                                            <input type="text" class="form-control" id="validationCustom01" placeholder="Masukan Lokasi.." required="" name="lokasi">
                                             <div class="invalid-feedback">
                                                 Tolong isi dahulu.
                                             </div>
@@ -86,12 +87,17 @@
                                             <span class="text-danger">*</span>
                                         </label>
                                         <div class="col-lg-6">
-                                            <input type="text" class="form-control" id="validationCustom01" placeholder="Masukan Suhu Tubuh.." required="">
+                                            <input type="text" class="form-control" id="validationCustom01" placeholder="Masukan Suhu Tubuh.." required="" name="suhu">
                                             <div class="invalid-feedback">
                                                 Tolong isi dahulu.
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <div class="col-lg-8 ms-auto">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
                                 </div>
                             </div>
                         </form>
