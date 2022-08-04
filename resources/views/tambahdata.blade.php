@@ -43,7 +43,7 @@
                                             <span class="text-danger">*</span>
                                         </label>
                                         <div class="col-lg-6">
-                                            <input type="date" class="form-control" id="validationCustom01" required="" name="tanggal">
+                                            <input type="date" class="form-control" id="validationCustom01"  name="tanggal" required >
                                             <div class="invalid-feedback">
                                                 Tolong isi tanggal.
                                             </div>
@@ -58,7 +58,7 @@
                                             <span class="text-danger">*</span>
                                         </label>
                                         <div class="col-lg-6">
-                                            <input type="text" class="form-control" id="validationCustom01" required="" name="waktu">
+                                            <input type="time" class="form-control" id="validationCustom01"  name="waktu" required>
                                             <div class="invalid-feedback">
                                                 Tolong isi dahulu.
                                             </div>
@@ -73,7 +73,7 @@
                                             <span class="text-danger">*</span>
                                         </label>
                                         <div class="col-lg-6">
-                                            <input type="text" class="form-control" id="validationCustom01" required="" name="lokasi">
+                                            <input type="text" class="form-control" id="validationCustom01"  name="lokasi" required>
                                             <div class="invalid-feedback">
                                                 Tolong isi dahulu.
                                             </div>
@@ -88,7 +88,7 @@
                                             <span class="text-danger">*</span>
                                         </label>
                                         <div class="col-lg-6">
-                                            <input type="text" class="form-control" id="validationCustom01" required="" name="suhu">
+                                            <input type="text" class="form-control" id="validationCustom01"name="suhu" required>
                                             <div class="invalid-feedback">
                                                 Tolong isi dahulu.
                                             </div>

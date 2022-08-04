@@ -93,8 +93,9 @@
                         <a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
                             <img src="images/avatar/1.png" width="15" alt="">
                             <div class="header-info ms-3">
-                                <span class="font-w600 ">Hi, <b>Mark</b></span>
-                                <small class="text-center  font-w400">0005902930</small>
+                                <span class="font-w600 ">Hi, <b>{{ Auth::user()->name }}</b></span>
+                                <small class="text-center  font-w400">{{ Auth::user()->nik }}</small>
+                                
                             </div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end">
