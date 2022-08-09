@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SelfCareController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\SelfCareController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,9 +15,19 @@ use App\Http\Controllers\LoginController;
 |
 */
 // login
-Route::get('/', function () {
-    return view('login');
-});
+// Route::get('/', function () {
+//     return view('login');
+// });
+
+Route::get('/', [LoginController::class, 'index'])->name('login');
+    
+Route::post('/', [LoginController::class, 'authenticate']);
+
+Route::post('/logout', [LoginController::class, 'logout']);
+
+Route::get('/register', [RegisterController::class, 'index']);
+
+Route::post('/register', [RegisterController::class, 'store']); 
 
 // Register
 Route::get('/register', function(){

@@ -24,6 +24,7 @@
 </head>
 
 <body class="vh-100">
+   
     <div class="authincation h-100">
         <div class="container h-100">
             <div class="row justify-content-center h-100 align-items-center">
@@ -39,23 +40,42 @@
                                         </div>
 									</div>
                                     <h4 class="text-center mb-4">Sign in your account</h4>
-                                    <form action="login">
+                                    @if ($errors->any())
+                                    <div class="alert alert-danger">
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                    @endif
+                                    <form action="/" method="POST">
+                                        @csrf
+                                        <div class="mb-3">
+                                            <label class="mb-1"><strong>Email</strong></label>
+                                            <input type="email" class="form-control" name="email" placeholder="example@email.com" >
+                                        </div>
                                         <div class="mb-3">
                                             <label class="mb-1"><strong>NIK</strong></label>
-                                            <input type="text" class="form-control" placeholder="Masukan NIK anda">
+                                            <input type="number" class="form-control" name="nik" id="nik">
                                         </div>
                                         <div class="mb-3">
-                                            <label class="mb-1"><strong>Username</strong></label>
-                                            <input type="text" class="form-control" placeholder="Masukan Nama Username Anda">
+                                            <label class="mb-1"><strong>Password</strong></label>
+                                            <input type="password" class="form-control" name="password" id="password">
                                         </div>
-                                       
                                         <div class="text-center">
                                             <button type="submit" class="btn btn-primary btn-block">Sign Me In</button>
                                         </div>
                                     </form>
                                     <div class="new-account mt-3">
-                                        <p>Don't have an account? <a class="text-primary" href="page-register.html">Sign up</a></p>
+                                        <p>Don't have an account? <a class="text-primary" href="/register">Sign up</a></p>
                                     </div>
+                                    @if(session()->has('loginError'))
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                       {{  session('loginError') }}
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                      </div>
+                                    @endif
                                 </div>
                             </div>
                         </div>

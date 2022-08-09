@@ -39,25 +39,30 @@
                                         </div>
 									</div>
                                     <h4 class="text-center mb-4">Sign up your account</h4>
-                                    <form action="index.html">
+                                    <form action="/register" method="post" role="form">
+                                        @csrf
                                         <div class="mb-3">
                                             <label class="mb-1"><strong>Username</strong></label>
-                                            <input type="text" class="form-control" placeholder="Masukan Username Anda">
+                                            <input type="text"  name="name" class="form-control" placeholder="Username" autofocus required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="mb-1"><strong>Email</strong></label>
+                                            <input type="text"name="email" class="form-control" placeholder="example@email.com">
                                         </div>
                                         <div class="mb-3">
                                             <label class="mb-1"><strong>NIK</strong></label>
-                                            <input type="text" class="form-control" placeholder="Masukan NIK Anda">
+                                            <input type="number"name="nik" class="form-control" placeholder="nik">
                                         </div>
                                         <div class="mb-3">
                                             <label class="mb-1"><strong>Password</strong></label>
-                                            <input type="password" class="form-control">
+                                            <input type="password"name="password" class="form-control">
                                         </div>
                                         <div class="text-center mt-4">
                                             <button type="submit" class="btn btn-primary btn-block">Sign me up</button>
                                         </div>
                                     </form>
                                     <div class="new-account mt-3">
-                                        <p>Already have an account? <a class="text-primary" href="/login">Sign in</a></p>
+                                        <p>Already have an account? <a class="text-primary" href="/">Sign in</a></p>
                                     </div>
                                 </div>
                             </div>
