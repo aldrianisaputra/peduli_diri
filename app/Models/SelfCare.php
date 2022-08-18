@@ -7,7 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class SelfCare extends Model
 {
-    use HasFactory;
-    protected $guarded=[];
+    // use HasFactory;
+    // protected $guarded=[];
+
+    protected $fillable = [
+        'tanggal',
+        'waktu',
+        'lokasi',
+        'suhu',
+    ];
 
 }
