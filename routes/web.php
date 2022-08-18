@@ -16,12 +16,12 @@ use App\Http\Controllers\SelfCareController;
 */
 // login
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
 
-// Route::get('/', [LoginController::class, 'index'])->name('login');
+Route::get('/', [LoginController::class, 'index'])->name('login');
     
-// Route::post('/', [LoginController::class, 'authenticate']);
+Route::post('/', [LoginController::class, 'authenticate']);
 
 Route::post('/logout', [LoginController::class, 'logout']);
 

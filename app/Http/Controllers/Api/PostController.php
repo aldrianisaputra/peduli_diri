@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\SelfCareController;
 use Illuminate\Http\Request;
 use App\Http\Resources\SelfcareResource;
 use App\Models\SelfCare;
@@ -50,5 +51,16 @@ class PostController extends Controller
 
         //return response
         return new SelfcareResource(true, 'Data Catatan Perjalanan Berhasil Ditambahkan!', $catper);
+    }
+    /**
+     * show
+     *
+     * @param  mixed $post
+     * @return void
+     */
+    public function show(SelfCare $catper)
+    {
+        //return single post as a resource
+        return new SelfcareResource(true, 'Data Catatan Perjalanan Ditemukan!', $catper);
     }
 }
