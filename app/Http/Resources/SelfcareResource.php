@@ -34,5 +34,37 @@ class SelfcareResource extends JsonResource
             'data'      => $this->resource
         ];
     }
+<<<<<<< HEAD
+    public function update(Request $request, SelfCare $catper)
+    {
+        //define validation rules
+        $validator = Validator::make($request->all(), [
+            'tanggal'     => 'required',
+            'waktu'     => 'required',
+            'lokasi'   => 'required',
+            'suhu'   => 'required',
+        ]);
+
+        //check if validation fails
+        if ($validator->fails()) {
+            return response()->json($validator->errors(), 422);
+        }
+
+
+            //update post with new image
+            $catper->update([
+                'tanggal'     => $request->tanggal,
+                'waktu'     => $request->waktu,
+                'lokasi'   => $request->lokasi,
+                'suhu'   => $request->suhu,
+            ]);
+
+        
+
+        //return response
+        return new SelfcareResource(true, 'Data catper Berhasil Diubah!', $catper);
+    }
+=======
     
+>>>>>>> dc5dcc02d5626ea309b3b3bb2e9ca792722e8d87
 }
