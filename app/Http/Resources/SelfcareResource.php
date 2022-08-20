@@ -34,6 +34,7 @@ class SelfcareResource extends JsonResource
             'data'      => $this->resource
         ];
     }
+<<<<<<< HEAD
     public function update(Request $request, SelfCare $catper)
     {
         //define validation rules
@@ -63,4 +64,7 @@ class SelfcareResource extends JsonResource
         //return response
         return new SelfcareResource(true, 'Data catper Berhasil Diubah!', $catper);
     }
+=======
+    
+>>>>>>> dc5dcc02d5626ea309b3b3bb2e9ca792722e8d87
 }
