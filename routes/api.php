@@ -20,3 +20,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 //catper
 Route::apiResource('/catper', App\Http\Controllers\Api\PostController::class);
+
+// user
+Route::apiResource('/user', App\Http\Controllers\Api\PostController::class);

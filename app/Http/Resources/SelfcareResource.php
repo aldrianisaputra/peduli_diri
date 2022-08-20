@@ -34,4 +34,5 @@ class SelfcareResource extends JsonResource
             'data'      => $this->resource
         ];
     }
+    
 }
