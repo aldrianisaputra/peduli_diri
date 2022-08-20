@@ -76,15 +76,33 @@ class PostController extends Controller
         //return response
         return new SelfcareResource(true, 'Data Catatan Perjalanan Berhasil Dihapus!', null);
     }
-
-
-    // user
-    public function user()
+    public function update(Request $request, SelfCare $catper)
     {
-        //get catper
-        $catper = SelfCare::latest()->paginate(5);
+        //define validation rules
+        $validator = Validator::make($request->all(), [
+            'tanggal'     => 'required',
+            'waktu'     => 'required',
+            'lokasi'   => 'required',
+            'suhu'   => 'required',
+        ]);
 
-        //return collection of posts as a resource
-        return new SelfcareResource(true, 'List Data Catatan Perjalanan', $catper);
+        //check if validation fails
+        if ($validator->fails()) {
+            return response()->json($validator->errors(), 422);
+        }
+
+
+            //update post with new image
+            $catper->update([
+                'tanggal'     => $request->tanggal,
+                'waktu'     => $request->waktu,
+                'lokasi'   => $request->lokasi,
+                'suhu'   => $request->suhu,
+            ]);
+
+        
+
+        //return response
+        return new SelfcareResource(true, 'Data Post Berhasil Diubah!', $catper);
     }
 }
