@@ -80,6 +80,7 @@
                         <thead>
                             <tr>
                                 <th>Id</th>
+                                <th>Nama</th>
                                 <th>Tanggal</th>
                                 <th>Waktu</th>
                                 <th>Lokasi</th>
@@ -93,6 +94,7 @@
                             @foreach ($data as $row)
                             <tr>
                                 <th scope="row">{{$no++}}</th>
+                                <td>{{ $row->user->name}}</td>
                                 <td>{{ $row->tanggal}}</td>
                                 <td>{{ $row->waktu}}</td>
                                 <td>{{ $row->lokasi}}</td>

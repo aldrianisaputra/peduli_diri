@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class SelfCare extends Model
 {
-    // use HasFactory;
+    use HasFactory;
     // protected $guarded=[];
 
     protected $fillable = [
@@ -16,5 +16,9 @@ class SelfCare extends Model
         'lokasi',
         'suhu',
     ];
+
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
 
 }
