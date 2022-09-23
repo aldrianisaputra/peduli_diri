@@ -80,7 +80,6 @@
                         <thead>
                             <tr>
                                 <th>Id</th>
-                                <th>Nama</th>
                                 <th>Tanggal</th>
                                 <th>Waktu</th>
                                 <th>Lokasi</th>
@@ -94,11 +93,10 @@
                             @foreach ($data as $row)
                             <tr>
                                 <th scope="row">{{$no++}}</th>
-                                <td>{{ $row->user->name}}</td>
                                 <td>{{ $row->tanggal}}</td>
                                 <td>{{ $row->waktu}}</td>
                                 <td>{{ $row->lokasi}}</td>
-                                <td>{{ $row->suhu}}</td>
+                                <td>{{ $row->suhu}}°</td>
                             </tr>
                             @endforeach
                         </tbody>
@@ -107,6 +105,7 @@
             </div>
         </div>
     </div>
+</div>
 <!-- Required vendors -->
 <script src="vendor/global/global.min.js"></script>
 <script src="vendor/chart.js/Chart.bundle.min.js"></script>

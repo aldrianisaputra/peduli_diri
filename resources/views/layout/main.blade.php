@@ -156,7 +156,7 @@
                                 </li>
                                 <li class="" style="margin-bottom: 2px ;">
                                     <a class="nav-link menu-title link-nav" href="/tampilandata"><i
-                                            data-feather="home"></i><span>Catatan Perjalanan</span></a>
+                                            data-feather="file"></i><span>Catatan Perjalanan</span></a>
                                 </li>
                                 <li class="dropdown" style="margin-bottom: 2px ;">
                                     <a class="nav-link menu-title link-nav" href="/tambahdata"><i
@@ -170,7 +170,7 @@
                                 </li>
                                 <li class="" style="margin-bottom: 2px ;">
                                     <a class="nav-link menu-title link-nav" href="/tampilandata"><i
-                                            data-feather="home"></i><span>Catatan Perjalanan</span></a>
+                                            data-feather="file"></i><span>Catatan Perjalanan</span></a>
                                 </li>
                                 <li class="dropdown" style="margin-bottom: 2px ;">
                                     <a class="nav-link menu-title link-nav" href="/datauser"><i
@@ -195,10 +195,10 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-6 footer-copyright">
-                            <p class="mb-0">Copyright 2021-22 © viho All rights reserved.</p>
+                            <p class="mb-0"></p>
                         </div>
                         <div class="col-md-6">
-                            <p class="pull-right mb-0">Hand crafted & made with <i
+                            <p class="pull-right mb-0"><i
                                     class="fa fa-heart font-secondary"></i></p>
                         </div>
                     </div>

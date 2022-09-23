@@ -39,6 +39,8 @@
             </div>
         </div>
     </div>
+    @if (auth()->user()->role == 'user')
+                                
     <div class="card-body text-center p-t-0">
         <h3 class="font-light">Wellcome Back, {{auth()->user()->name}}!</h3>
         <p>Welcome to the SelfCare Family! we are glad that you are visite this dashboard. we will be happy to
@@ -65,6 +67,35 @@
                     class="icofont icofont-copy-alt"></i>Test</button>
         </div>
     </div>
+    @endif
+    @if (auth()->user()->role == 'admin')
+                                
+    <div class="card-body text-center p-t-0">
+        <h3 class="font-light">Wellcome Back, {{auth()->user()->name}}!</h3>
+        <p>Welcome to the SelfCare Family! we are glad that you are visite this dashboard. we will be happy to
+            help about your trip.</p>
+        <a href="/datauser" class="btn btn-light" style="">Lihat Data User</a>
+    </div>
+    <div class="confetti">
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="confetti-piece"></div>
+        <div class="code-box-copy">
+            <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#profile-greeting" title="Copy"><i
+                    class="icofont icofont-copy-alt"></i>Test</button>
+        </div>
+    </div>
+    @endif
 </div>
 <div class="row">
     <div class="col-xl-12 col-md-6 box-col-6 des-xl-50">

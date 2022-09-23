@@ -1,4 +1,4 @@
-@extends('layout.mainview')
+@extends('layout.main')
 
 @section('content')
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -74,14 +74,11 @@
     </div>
 </div>
 
-<div class="col-lg-12">
+<div class="col-12">
     <div class="card">
-        <div class="card-header">
-            <h4 class="card-title">Responsive Table</h4>
-        </div>
         <div class="card-body">
             <div class="table-responsive">
-                <table class="table header-border table-responsive-sm">
+                <table id="example" class="display" style="min-width: 845px">
                     <thead>
                         <tr>
                             <th>Id</th>
@@ -111,6 +108,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 <!-- Required vendors -->
 <script src="vendor/global/global.min.js"></script>

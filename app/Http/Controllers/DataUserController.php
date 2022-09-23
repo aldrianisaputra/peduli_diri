@@ -16,7 +16,7 @@ class DataUserController extends Controller
     public function delete($id){
         $data = User::find($id);
         $data->delete();
-        return redirect()->route('dataUser');
+        return redirect()->route('datauser');
     }
     
 }

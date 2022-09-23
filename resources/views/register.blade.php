@@ -80,7 +80,7 @@
                   <div class="form-group">
                     <label>NIK</label>
                     <div class="input-group"><span class="input-group-text"><i
-                      class="fa-solid fa-id-card"></i></i></span>
+                      class="fa-solid fa-id-card"></i></span>
                       <input class="form-control" type="number" required="" placeholder="nik" name="nik">
                     </div>
                   </div>
@@ -120,6 +120,7 @@
     <!-- Theme js-->
     <script src="js/script.js"></script>
     <!-- login js-->
+    <script src="https://kit.fontawesome.com/ba0c4ed4ca.js" crossorigin="anonymous"></script>
     <!-- Plugin used-->
   </body>
 </html>
