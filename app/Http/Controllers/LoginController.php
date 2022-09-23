@@ -17,6 +17,7 @@ class LoginController extends Controller
 
         $credentials = $request->validate([
             'email' => 'required|email:dns',
+            'nik' => 'required|numeric',
             'password' => 'required',
         ]);
         // dd('berhasil anzay');
@@ -27,5 +28,13 @@ class LoginController extends Controller
         }
         // dd($_SESSION);
         return back()->with('loginError', 'Login Gagal!');
+    }
+    public function logout(){
+        Auth::logout();
+
+        request()->session()->invalidate();
+        request()->session()->regenerateToken();
+
+        return redirect('/');
     }
 }

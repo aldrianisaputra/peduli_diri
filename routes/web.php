@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\DataUserController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SelfCareController;
 /*
@@ -42,6 +43,12 @@ Route::get('/dashboard', function(){
 // data perjalanan
 
 Route::get('/tampilandata', [SelfCareController::class,'tampilan'])->name('tampilandata');
-
 Route::get('/tambahdata', [SelfCareController::class,'tambahdata'])->name('tambahdata');
 Route::post('/insertdata', [SelfCareController::class,'insertdata'])->name('insertdata');
+
+
+// data user
+Route::get('/datauser', [DataUserController::class,'index'])->name('datauser');
+Route::get('/delete/{id}', [DataUserController::class,'delete'])->name('delete');
+
+// data admin

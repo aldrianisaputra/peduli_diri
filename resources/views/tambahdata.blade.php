@@ -24,13 +24,31 @@
 <link href="vendor/jquery-nice-select/css/nice-select.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 
+<div class="container-fluid">
+    <div class="page-header">
+        <div class="row">
+            <div class="col-lg-6">
+                <h3>ISI DATA</h3>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">Home</li>
+                    <li class="breadcrumb-item">Isi data</li>
+
+                </ol>
+            </div>
+            <div class="col-lg-6">
+                <!-- Bookmark Start-->
+                <div class="bookmark">
+
+                </div>
+                <!-- Bookmark Ends-->
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="container1">
     <div class="col-12">
         <div class="card">
-            <div class="card-header text-center">
-                <h4 class="card-title" style="text-align: center">Isi Data</h4>
-            </div>
             <div class="card-body">
                 <div class="card-body">
                     <div class="form-validation">
