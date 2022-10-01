@@ -29,7 +29,7 @@ class SelfcareSeeder extends Seeder
  
     	      // insert data ke table pegawai menggunakan Faker
     		DB::table('self_cares')->insert([
-                // 'user_id' => 1,
+                'user_id' => 1,
     			'tanggal' => $faker->date,
     			'waktu' => $faker->time,
     			'lokasi' => $faker->city,

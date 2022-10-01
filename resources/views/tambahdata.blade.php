@@ -57,6 +57,18 @@
                             <div class="row">
                                 <div class="col-xl-12">
                                     <div class="mb-3 row">
+                                        <div class="col-lg-6">
+                                            <input type="hidden" value="{{Auth::user()->id}}" name="user_id">
+                                            <div class="invalid-feedback">
+                                                Tolong isi tanggal.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="mb-3 row">
                                         <label class="col-lg-4 col-form-label" for="validationCustom01">Tanggal
                                             <span class="text-danger">*</span>
                                         </label>

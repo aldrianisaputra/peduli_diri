@@ -9,18 +9,20 @@ use phpDocumentor\Reflection\Types\Self_;
 class SelfCareController extends Controller
 {
     // mengambil data secara konektiv
-    // public function __construct(Selfcare $catper)    
-    // {
-    //     $this->catper = $catper;
-    // }
-
-
-    public function tampilan(){
-        $data = SelfCare::all();
-        // dd($data);
-
-        return view('dataperjalanan', compact('data'));
+    public function __construct(Selfcare $catper)    
+    {
+        $this->catper = $catper;
+        
     }
+    
+    public function tampilan(){
+        // $data = SelfCare::all();
+        // // dd($data);
+
+        $catper = $this->catper->with('user')->get();
+        return view('dataperjalanan', compact('catper'));
+    }
+
     public function tambahdata(){
         return view('tambahdata');
     }

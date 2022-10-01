@@ -1,6 +1,7 @@
 @extends('layout.main')
 
 @section('content')
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,14 +51,21 @@
 <link href="vendor/jquery-nice-select/css/nice-select.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 
+<style>
+    .userpro-box{
+        margin-left: 250px
+    }
+</style>
+
+
 <div class="container-fluid">
     <div class="page-header">
         <div class="row">
             <div class="col-lg-6">
-                <h3>Catatan Perjalanan</h3>
+                <h3>ISI DATA</h3>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">Home</li>
-                    <li class="breadcrumb-item">Catatan Perjalanan</li>
+                    <li class="breadcrumb-item">Isi data</li>
 
                 </ol>
             </div>
@@ -71,44 +79,46 @@
         </div>
     </div>
 </div>
-
-<div class="col-12">
-        <div class="card">
-            <div class="card-body">
-                <div class="table-responsive">
-                    <table id="example" class="display" style="min-width: 845px">
-                        <thead>
-                            <tr>
-                                <th>Id</th>
-                                <th>Nama</th>
-                                <th>Tanggal</th>
-                                <th>Waktu</th>
-                                <th>Lokasi</th>
-                                <th>Suhu Tubuh</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @php
-                            $no = 1;
-                            @endphp
-                            @foreach ($catper as $row)
-                            <tr>
-                                <th scope="row">{{$no++}}</th>
-                                <td>{{ $row->user->name}}</td>
-                                <td>{{ $row->tanggal}}</td>
-                                <td>{{ $row->waktu}}</td>
-                                <td>{{ $row->lokasi}}</td>
-                                <td>{{ $row->suhu}}°</td>
-                            </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
+<div class="container-fluid">
+    <div class="user-profile">
+      <div class="row">
+        <!-- user profile header start-->
+        <div class="col-sm-12">
+          <div class="card profile-header" style="background: #24695c;">
+            <div class="profile-img-wrrap"><img class="img-fluid bg-img-cover" src="images/user-profile/bg-profile.jpg" alt=""></div>
+            <div class="userpro-box" style="border-radius: 30px;" >
+              <div class="img-wrraper">                              
+                <div class="avatar"><img
+                    class="img-90 rounded-circle"
+                    src="https://laravel.pixelstrap.com/viho/assets/images/dashboard/1.png" alt="" />
+              </div>
+              <div class="user-designation">
+                <div class="title"><a target="_blank" href=""> 
+                    <h4>{{auth()->user()->name}}</h4>
+                    <p>{{auth()->user()->email}}</p ></a></div>
+                
+                <div class="follow">
+                  <ul class="follow-list">
+                    <li>
+                      <div class="">NIK</div><span>{{auth()->user()->nik}}</span>
+                    </li>
+                    <li>
+                        <div class="">Status</div><span>member</span>
+                      </li>
+                  </ul>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+        <!-- user profile header end-->
+        
+      </div>
     </div>
-</div>
-<!-- Required vendors -->
+  </div>
+
+
+  <!-- Required vendors -->
 <script src="vendor/global/global.min.js"></script>
 <script src="vendor/chart.js/Chart.bundle.min.js"></script>
 <!-- Apex Chart -->
@@ -124,4 +134,6 @@
 <script src="js/dlabnav-init.js"></script>
 <script src="js/demo.js"></script>
 <script src="js/styleSwitcher.js"></script>
+
+<script src="https://kit.fontawesome.com/ba0c4ed4ca.js" crossorigin="anonymous"></script>
 @endsection
